@@ -1,0 +1,91 @@
+/** @format */
+body {
+  margin: 0 auto;
+  width: 1170px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(0deg, #ffb6c1, #ffffff);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.toDoApp {
+  width: 800px;
+  height: auto;
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding-left: 56.5px;
+}
+.toDoApp h1 {
+  margin-bottom: 20px;
+  padding-top: 75px;
+  font-size: 45px;
+}
+.toDoApp_input {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 590px;
+  border-radius: 10px;
+}
+.toDoApp_add {
+  padding: 0px;
+  font-size: 25px;
+  width: 67px;
+  height: 67px;
+  border-radius: 10px;
+  background-color: #b487f0;
+  color: aliceblue;
+}
+.toDoApp_add:hover {
+  background-color: #e44b93;
+}
+.toDoApp_hienThi {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-size: 20px;
+  margin-left: -40px;
+}
+.toDoApp_hienThi input {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 590px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f0f0f0;
+  background-color: #f0f0f0;
+}
+.toDoApp_dem {
+  padding-bottom: 60px;
+}
+.toDoApp_text {
+  font-size: 25px;
+  margin-right: 113px;
+  display: inline-block;
+  width: 400px;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
+.toDoApp_clearAll {
+  width: 170px;
+  height: 75px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #b487f0;
+  color: aliceblue;
+}
+.toDoApp_clearAll:hover {
+  background-color: #e44b93;
+}
+
+/*# sourceMappingURL=style.css.map */
