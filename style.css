@@ -18,11 +18,11 @@ ul li {
 }
 
 .toDoApp {
-  width: 800px;
+  width: 737px;
   height: auto;
-  background-color: aliceblue;
+  background-color: white;
   border-radius: 15px;
-  padding-left: 56.5px;
+  padding-left: 50px;
 }
 .toDoApp h1 {
   margin-bottom: 20px;
@@ -45,25 +45,45 @@ ul li {
   border-radius: 10px;
   background-color: #b487f0;
   color: aliceblue;
+  opacity: 0.6;
+  pointer-events: none;
 }
-.toDoApp_add:hover {
-  background-color: #e44b93;
+.toDoApp_add.active {
+  opacity: 1;
+  pointer-events: auto;
 }
-.toDoApp_hienThi {
-  margin-top: 40px;
-  margin-bottom: 60px;
-  font-size: 20px;
+.toDoApp_list {
   margin-left: -40px;
+  max-height: 250px;
+  overflow-y: auto;
 }
-.toDoApp_hienThi input {
-  font-size: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 590px;
+.toDoApp_list li {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 20px;
+  position: relative;
+  background-color: #eef0f1;
   border-radius: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #f0f0f0;
-  background-color: #f0f0f0;
+  margin-bottom: 8px;
+  width: 685px;
+  cursor: default;
+  overflow: hidden;
+  font-size: 20px;
+}
+.toDoApp_list li span {
+  position: absolute;
+  right: -50px;
+  background-color: red;
+  color: black;
+  width: 45px;
+  text-align: center;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 20px;
+}
+.toDoApp_list li:hover span {
+  right: 0px;
 }
 .toDoApp_dem {
   padding-bottom: 60px;
