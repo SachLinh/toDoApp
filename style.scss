@@ -1,5 +1,7 @@
 /** @format */
-
+* {
+	box-sizing: border-box;
+}
 body {
 	margin: 0 auto;
 	width: 1170px;
@@ -16,7 +18,7 @@ ul li {
 	list-style: none;
 }
 .toDoApp {
-	width: 737px;
+	width: 800px;
 	height: auto;
 	background-color: white;
 	border-radius: 15px;
@@ -31,8 +33,9 @@ ul li {
 		padding-top: 20px;
 		padding-bottom: 20px;
 		padding-left: 20px;
-		width: 590px;
+		width: 600px;
 		border-radius: 10px;
+		margin-right: 10px;
 	}
 	&_add {
 		padding: 0px;
@@ -42,29 +45,30 @@ ul li {
 		border-radius: 10px;
 		background-color: #b487f0;
 		color: aliceblue;
-		opacity: 0.6;
+	}
+	&_inputAdd button {
+		opacity: 0.2;
 		pointer-events: none;
 	}
-	&_add.active {
-		// background-color: #e44b93;
+	&_inputAdd button.active {
 		opacity: 1;
 		pointer-events: auto;
 	}
 	&_list {
 		margin-left: -40px;
-		max-height: 250px;
+		max-height: 210px;
 		overflow-y: auto;
 	}
 	&_list li {
 		height: 45px;
+		width: 650px;
 		line-height: 45px;
 		padding-left: 20px;
 		position: relative;
 		background-color: rgb(238, 240, 241);
 		border-radius: 10px;
 		margin-bottom: 8px;
-		width: 685px;
-		cursor: default;
+		// cursor: default;
 		overflow: hidden;
 		font-size: 20px;
 		span {

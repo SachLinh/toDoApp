@@ -1,4 +1,8 @@
 /** @format */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   width: 1170px;
@@ -18,7 +22,7 @@ ul li {
 }
 
 .toDoApp {
-  width: 737px;
+  width: 800px;
   height: auto;
   background-color: white;
   border-radius: 15px;
@@ -34,8 +38,9 @@ ul li {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  width: 590px;
+  width: 600px;
   border-radius: 10px;
+  margin-right: 10px;
 }
 .toDoApp_add {
   padding: 0px;
@@ -45,28 +50,29 @@ ul li {
   border-radius: 10px;
   background-color: #b487f0;
   color: aliceblue;
-  opacity: 0.6;
+}
+.toDoApp_inputAdd button {
+  opacity: 0.2;
   pointer-events: none;
 }
-.toDoApp_add.active {
+.toDoApp_inputAdd button.active {
   opacity: 1;
   pointer-events: auto;
 }
 .toDoApp_list {
   margin-left: -40px;
-  max-height: 250px;
+  max-height: 210px;
   overflow-y: auto;
 }
 .toDoApp_list li {
   height: 45px;
+  width: 650px;
   line-height: 45px;
   padding-left: 20px;
   position: relative;
   background-color: #eef0f1;
   border-radius: 10px;
   margin-bottom: 8px;
-  width: 685px;
-  cursor: default;
   overflow: hidden;
   font-size: 20px;
 }
